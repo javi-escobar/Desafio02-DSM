@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1071928970564",
+    "firebase_url": "https://desafio02dsm-default-rtdb.firebaseio.com",
+    "project_id": "desafio02dsm",
+    "storage_bucket": "desafio02dsm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071928970564:android:ba074a085a55a1afc21b11",
+        "android_client_info": {
+          "package_name": "sv.edu.udb.blu_med"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN2GTzmjdVHjKQDc-7qEJlZOhA1mg-Ftc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
