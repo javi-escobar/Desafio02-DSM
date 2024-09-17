@@ -75,13 +75,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:text="@string/guardar"
-        android:onClick="guardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary_color"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:background="@color/ic_blu_med_launcher_background"
+        android:onClick="guardar"
+        android:text="@string/guardar"
+        android:textColorLink="@color/dark_primary_color" />
 
     <Button
         android:text="@string/cancelar"
