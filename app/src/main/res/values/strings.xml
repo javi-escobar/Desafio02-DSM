@@ -8,4 +8,7 @@
     <string name="efcMed">Efectos Secundarios</string>
     <string name="precioMed">Precio</string>
     <string name="lblDatMed">Datos del Medicamento</string>
+    <string name="realCompra">Realizar Compra</string>
+    <string name="hisCompra">Historial de Compras</string>
+    <string name="btnVerCompras">Ver Historial de Compras</string>
 </resources>

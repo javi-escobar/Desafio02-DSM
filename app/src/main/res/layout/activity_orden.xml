@@ -20,4 +20,21 @@
         android:textColor="@color/primary_text"
         android:layout_marginTop="16dp"/>
 
+    <Button
+        android:id="@+id/btnRealizarCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/realCompra"
+        android:onClick="realizarCompra"
+        android:background="@color/primary_color"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnVerHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnVerCompras"
+        android:onClick="verHistorialCompras"
+        android:background="@color/primary_color"
+        android:layout_marginTop="20dp"/>
 </LinearLayout>

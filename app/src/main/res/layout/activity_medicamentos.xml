@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Botón flotante para agregar un nuevo medicamento -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <!--com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_agregar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,9 +15,8 @@
         android:clickable="true"
         android:background="@color/primary_color"
         app:srcCompat="@android:drawable/ic_input_add"
-        app:fabSize="normal" />
+        app:fabSize="normal" /-->
 
-    <!-- Botón flotante para ver la orden -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnVerOrden"
         android:layout_width="wrap_content"
@@ -32,7 +30,6 @@
         app:srcCompat="@android:drawable/ic_menu_view"
         app:fabSize="normal" />
 
-    <!-- ListView para mostrar los medicamentos -->
     <ListView
         android:id="@+id/ListaMedicamentos"
         android:layout_width="match_parent"

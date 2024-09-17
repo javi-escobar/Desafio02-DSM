@@ -5,7 +5,6 @@
     android:layout_margin="10dp"
     android:layout_height="wrap_content">
 
-    <!-- Nombre del medicamento -->
     <TextView
         android:id="@+id/tvNombreMedicamento"
         android:layout_margin="5dp"
@@ -14,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <!-- Indicaciones del medicamento -->
     <TextView
         android:id="@+id/tvIndicaciones"
         android:layout_margin="5dp"
@@ -23,7 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <!-- Dosis del medicamento -->
     <TextView
         android:id="@+id/tvDosis"
         android:layout_margin="5dp"
@@ -32,7 +29,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <!-- Efectos secundarios del medicamento -->
     <TextView
         android:id="@+id/tvEfectosSecundarios"
         android:layout_margin="5dp"
@@ -41,7 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <!-- Precio del medicamento -->
     <TextView
         android:id="@+id/tvPrecio"
         android:layout_margin="5dp"

@@ -35,7 +35,7 @@ class AddMedicamentoActivity : AppCompatActivity() {
         edtIndicaciones = findViewById<EditText>(R.id.edtIndicaciones)
         edtDosis = findViewById<EditText>(R.id.edtDosis)
         edtEfectosSecundarios = findViewById<EditText>(R.id.edtEfectosSecundarios)
-        edtPrecio = findViewById<EditText>(R.id.edtPrecio)  // Inicializado para el precio
+        edtPrecio = findViewById<EditText>(R.id.edtPrecio)
 
         val datos: Bundle? = intent.extras
         datos?.let {
@@ -50,12 +50,40 @@ class AddMedicamentoActivity : AppCompatActivity() {
     }
 
     fun guardar(v: View?) {
-        val nombreMedicamento: String = edtNombreMedicamento?.text.toString()
-        val indicaciones: String = edtIndicaciones?.text.toString()
-        val dosis: String = edtDosis?.text.toString()
-        val efectosSecundarios: String = edtEfectosSecundarios?.text.toString()
-        val precioText: String = edtPrecio?.text.toString()
+        val nombreMedicamento: String = edtNombreMedicamento?.text.toString().trim()
+        val indicaciones: String = edtIndicaciones?.text.toString().trim()
+        val dosis: String = edtDosis?.text.toString().trim()
+        val efectosSecundarios: String = edtEfectosSecundarios?.text.toString().trim()
+        val precioText: String = edtPrecio?.text.toString().trim()
+
+        // Validar campos vacíos
+        if (nombreMedicamento.isEmpty()) {
+            Toast.makeText(this, "El nombre del medicamento no puede estar vacío", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (indicaciones.isEmpty()) {
+            Toast.makeText(this, "Las indicaciones no pueden estar vacías", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (dosis.isEmpty()) {
+            Toast.makeText(this, "La dosis no puede estar vacía", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (efectosSecundarios.isEmpty()) {
+            Toast.makeText(this, "Los efectos secundarios no pueden estar vacíos", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (precioText.isEmpty()) {
+            Toast.makeText(this, "El precio no puede estar vacío", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        // Validar precio como número
         precio = precioText.toDoubleOrNull()
+        if (precio == null || precio!! <= 0) {
+            Toast.makeText(this, "Ingresa un precio válido mayor que 0", Toast.LENGTH_SHORT).show()
+            return
+        }
 
         database = FirebaseDatabase.getInstance().getReference("medicamentos")
 
