@@ -26,7 +26,7 @@
         }
 
         private fun inicializar() {
-            val fab_agregar: FloatingActionButton = findViewById(R.id.fab_agregar)
+            val fab_agregar: FloatingActionButton = findViewById(R.id.btnVerOrden)
             listaMedicamentos = findViewById(R.id.ListaMedicamentos)
 
             fab_agregar.setOnClickListener {
