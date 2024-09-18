@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnActivity2.setOnClickListener {
-            val intent = Intent(this, AddMedicamentoActivity::class.java)
+            val intent = Intent(this, HistorialComprasActivity::class.java)
             startActivity(intent)
         }
     }

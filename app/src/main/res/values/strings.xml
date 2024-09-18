@@ -11,4 +11,14 @@
     <string name="realCompra">Realizar Compra</string>
     <string name="hisCompra">Historial de Compras</string>
     <string name="btnVerCompras">Ver Historial de Compras</string>
+    <string name="blu_main">Blu-Med</string>
+    <string name="ver_medicamentos">Ver Medicamentos</string>
+    <string name="ver_historial">Ver Historial de Compras</string>
+    <string name="Ya_cuenta">¿Ya posees una cuenta?</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="Registrar">Registrar</string>
+    <string name="contra">Contraseña</string>
+    <string name="auth">Autenticar</string>
+    <string name="no_cuenta">¿No tienes una cuenta?</string>
 </resources>
